@@ -26,15 +26,12 @@ class MainActivity : AppCompatActivity() {
             // determine which type of Amdahl's law we work on
             when (amdType.selectedItem) {
                 "Symmetric" -> {
-                    Toast.makeText(this, "Symmetric", Toast.LENGTH_SHORT).show()
                     symmetricGraphh()
                 }
                 "Asymmetric" -> {
-                    Toast.makeText(this, "Asymmetric", Toast.LENGTH_SHORT).show()
                     asymmetricGraphh()
                 }
                 "Dynamic" -> {
-                    Toast.makeText(this, "Dynamic", Toast.LENGTH_SHORT).show()
                     dynamicGraphh()
                 }
             }
@@ -120,7 +117,7 @@ class MainActivity : AppCompatActivity() {
             amdSym3.color = Color.RED
             graph.addSeries(amdSym3)
             initialGraph()
-            Toast.makeText(this, "Symmetric Graph Done", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this, "Asymmetric Graph Done", Toast.LENGTH_SHORT).show()
         } catch (e: Exception) {
         }
 
@@ -151,7 +148,7 @@ class MainActivity : AppCompatActivity() {
             amdSym3.color = Color.RED
             graph.addSeries(amdSym3)
             initialGraph()
-            Toast.makeText(this, "Symmetric Graph Done", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this, "Dynamic Graph Done", Toast.LENGTH_SHORT).show()
         } catch (e: Exception) {
         }
     }
