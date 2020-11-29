@@ -26,19 +26,42 @@
 
             </com.jjoe64.graphview.GraphView>
 
+            <Spinner
+                android:id="@+id/amdType"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/graph"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp"></Spinner>
+
 
             <Button
                 android:id="@+id/graphbtn"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/graph"
+                android:layout_below="@id/amdType"
                 android:layout_centerHorizontal="true"
-                android:layout_marginTop="100dp"
+                android:layout_marginTop="20dp"
                 android:text="Graph">
 
             </Button>
 
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/graphbtn"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="40dp"
+                android:text="Osama Fouad"
+
+                android:textColor="@android:color/black"
+                android:textSize="20dp">
+
+            </TextView>
+
         </RelativeLayout>
+
 
     </ScrollView>
 
